@@ -25,7 +25,7 @@ const Login = () => {
                    maxAge: 60 * 60 * 60 * 60,
                });
       
-               router.push('/Dashboard');
+               router.push('/DashboardBlaze');
       
             } else {
       

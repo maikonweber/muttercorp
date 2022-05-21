@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { parseCookies, setCookie } from 'nookies';
 import { Grid,Box, Flex, Text, Button, GridItem } from '@chakra-ui/react';
@@ -29,7 +28,7 @@ import {
 } from '@chakra-ui/react'
 
 
-function Dashboard({ datax, datax2 }) {
+function DashboardBlaze({ datax, datax2 }) {
 
     console.log(datax)
   return (
@@ -127,8 +126,7 @@ function Dashboard({ datax, datax2 }) {
 export async function getServerSideProps(ctx) {
   // get token of browser
   const { 'nextauth.token': token } = parseCookies(ctx)
-  const datax = await getAllResult(token)
-  const datax2 = await getTable(token)
+
   // get token of server
   return {
     props: {
@@ -139,4 +137,4 @@ export async function getServerSideProps(ctx) {
 }
 
 
-export default Dashboard;
+export default DashboardBlaze;

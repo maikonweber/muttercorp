@@ -18,7 +18,7 @@ const Header = (props) => {
         w={['210px', '210px', '210px', '210px', '210px']}
         src='/MutterCorp2.png' ></Image>
         </Flex>  
-        {/* <WalletBalance /> */}
+        <WalletBalance />
         </>
     )
        
